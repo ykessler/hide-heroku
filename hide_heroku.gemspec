@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "hide_heroku"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.3"
   spec.authors       = ["Yarin Kessler"]
   spec.email         = ["ykessler@appgrinders.com"]
   spec.description   = "Hides Heroku's default urls from search engines by applying 'X-Robots-Tag:noindex, nofollow' response headers on requests to *.herokuapp.com"
