@@ -19,6 +19,9 @@ module Rack
         if /\.herokuapp\.com\/?.*/ =~ @request.url
           @headers['X-Robots-Tag'] = 'noindex, nofollow'
         end
+        if /localhost/ =~ @request.url
+          @headers['X-Robots-Tag'] = 'NICE'
+        end
         @headers
       end
     
