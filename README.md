@@ -8,6 +8,8 @@ All Heroku apps are accessible via the **\*herokuapp.com**, even after a custom 
 
 HideHeroku blocks robots from all content served under the **\*.herokuapp.com** domain, *including* assets, by issuing 'noindex, nofollow' **X-Robots-Tag** HTTP response headers on those requests.
 
+More on **X-Robots-Tags**:
+
  - [Robots meta tag and X-Robots-Tag HTTP header specifications - Google Webmasters](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag)
  - [Preventing your site from being indexed, the right way • Yoast](http://yoast.com/prevent-site-being-indexed/)
  - [Using the X-Robots-Tag HTTP Header Specifications in SEO: Tips and Tricks - SEO Chat](http://www.seochat.com/c/a/search-engine-optimization-help/using-the-x-robots-tag-http-header-specifications-in-seo-tips-and-tricks/)
