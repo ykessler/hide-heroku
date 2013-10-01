@@ -4,7 +4,9 @@ Hides default Heroku (*.herokuapp.com) URLs from search engines in order to avoi
 
 ## Info
 
- All Heroku apps are accessible via the `herokuapp.com`, even after a custom domain is assigned. This introduces the potential for duplicate content issues if search engines index the same content under both custom and default domains. A number of solutions can be employed to overcome this, including redirection and robots.txt files. However an easy and innocuous solution is to always issue an **X-Robots-Tag** response header with `noindex` and `nofollow` directives for any request against `.herokuapp.com`, thereby ensuring the most common search engines effectively ignore anything served under that domain.
+All Heroku apps are accessible via the **\*herokuapp.com**, even after a custom domain is assigned. This introduces the potential for duplicate content issues if search engines index the same content under both custom and default domains. 
+
+HideHeroku blocks robots from all content served under the **\*.herokuapp.com** domain, *including* assets, by issuing 'noindex, nofollow' **X-Robots-Tag** HTTP response headers on those requests.
 
  - [Robots meta tag and X-Robots-Tag HTTP header specifications - Google Webmasters](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag)
  - [Preventing your site from being indexed, the right way • Yoast](http://yoast.com/prevent-site-being-indexed/)

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ykessler@appgrinders.com"]
   spec.description   = "Hides default Heroku (*.herokuapp.com) URLs from search engines in order to avoid duplicate content issues"
   spec.summary       = "Hides default Heroku (*.herokuapp.com) URLs from search engines"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ykessler/hide-heroku"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
